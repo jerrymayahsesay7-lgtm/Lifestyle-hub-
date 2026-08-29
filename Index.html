@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business & Lifestyle Hub</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --accent: #ff4757;
+      --accent-hover: #e84118;
+      --text: #f0f6fc;
+      --muted: #8b949e;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    
+    /* Top Banner */
+    .top-bar { background: var(--accent); color: white; text-align: center; padding: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+    
+    /* Hero */
+    header { padding: 4rem 2rem; text-align: center; background: radial-gradient(circle at center, #21262d 0%, var(--bg) 100%); border-bottom: 1px solid var(--border); }
+    h1 { font-size: 2.8rem; margin-bottom: 0.5rem; letter-spacing: 1px; }
+    p.tagline { color: var(--muted); font-size: 1.2rem; margin-bottom: 1.5rem; }
+    .btn { display: inline-block; background: var(--accent); color: white; padding: 0.8rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    .btn:hover { background: var(--accent-hover); }
+
+    /* Main Container */
+    .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .section-title { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; color: var(--text); }
+    
+    /* Grid Layouts */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+    .card { background: var(--card-bg); border-radius: 16px; overflow: hidden; border: 1px solid var(--border); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card-img { width: 100%; height: 200px; background-color: #21262d; display: flex; align-items: center; justify-content: center; color: var(--muted); font-weight: bold; }
+    .card-body { padding: 1.5rem; }
+    .card-title { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .card-desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .price { font-size: 1.2rem; font-weight: bold; color: var(--accent); margin-bottom: 1rem; }
+    
+    /* Social & Contact */
+    .social-section { background: var(--card-bg); border-radius: 16px; padding: 2.5rem; border: 1px solid var(--border); text-align: center; }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .social-btn { background: #21262d; color: var(--text); padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; border: 1px solid var(--border); font-weight: 600; }
+    .social-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">🔥 Trending Now — Check out our latest collections and Facebook updates!</div>
+
+  <header>
+    <h1>Style & Trends Hub</h1>
+    <p class="tagline">Your destination for top-tier products, trending styles, and vibrant community vibes.</p>
+    <a href="#products" class="btn">Explore Collection</a>
+  </header>
+
+  <main class="container">
+    
+    <section id="products">
+      <h2 class="section-title">Featured Collections</h2>
+      <div class="grid">
+        
+        <div class="card">
+          <div class="card-img">Product Image</div>
+          <div class="card-body">
+            <h3 class="card-title">Signature Sneakers</h3>
+            <p class="card-desc">Fresh, high-energy footwear designed to make a statement wherever you step.</p>
+            <div class="price">Featured Item</div>
+            <a href="#connect" class="btn" style="display:block; text-align:center;">Order via Facebook</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">Beauty Showcase</div>
+          <div class="card-body">
+            <h3 class="card-title">Eyelash Collections</h3>
+            <p class="card-desc">Premium beauty picks tailored to complement your daily look and lifestyle.</p>
+            <div class="price">Popular Choice</div>
+            <a href="#connect" class="btn" style="display:block; text-align:center;">Order via Facebook</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">Community Highlights</div>
+          <div class="card-body">
+            <h3 class="card-title">Social Content & Vlogs</h3>
+            <p class="card-desc">Catch our latest campus videos, behind-the-scenes drops, and sound clips.</p>
+            <div class="price">Watch Now</div>
+            <a href="#connect" class="btn" style="display:block; text-align:center;">View Media</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="social-section" id="connect">
+      <h2>Join Our Community</h2>
+      <p style="color: var(--muted); margin-top: 0.5rem;">Connect directly with us on Facebook for orders, customer support, and fresh drops.</p>
+      
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-btn">Visit Facebook Page</a>
+        <a href="https://wa.me/" target="_blank" class="social-btn">Chat on WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Business & Social Lifestyle Hub. Built for growth and community.</p>
+  </footer>
+
+</body>
+</html>
+
